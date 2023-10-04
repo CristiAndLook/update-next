@@ -4,10 +4,10 @@ const loadPosts = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
     const posts = await res.json()
 
-    await new Promise((resolve) => {
-        setTimeout(resolve, 3000)
-    })
-    
+    // await new Promise((resolve) => {
+    //     setTimeout(resolve, 3000)
+    // })
+
     return posts
 }
 
